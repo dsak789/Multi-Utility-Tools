@@ -1,38 +1,70 @@
-.unit-converter-container {
+.unitmain{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+    
 }
 
-.input-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+h2 {
+    color: #333;
     margin-bottom: 20px;
 }
 
-select, input {
-    padding: 10px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.unitcontainer {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.convert-btn {
-    padding: 10px 15px;
-    background-color: #4CAF50;
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.cnt-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.convert-btn:hover {
-    background-color: #45a049;
+.cnt-btn:hover {
+    background-color: #0056b3;
 }
 
-.result-container {
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #28a745; 
+    background-color: #000000cb;
     text-align: center;
-    margin-top: 20px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.error {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: red;
+    background-color: #000000cb;
+    padding: 12px;
+    border-radius: 12px;
 }

@@ -1,23 +1,19 @@
-/* Main container */
 .qr-generator-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     background-color: #f0f4f8;
     padding: 20px;
     font-family: 'Arial', sans-serif;
 }
 
-/* Title styling */
 .title {
     font-size: 28px;
     color: #333;
     margin-bottom: 20px;
 }
 
-/* Input container styling */
 .input-container {
     display: flex;
     flex-direction: column;
@@ -27,7 +23,6 @@
     margin-bottom: 20px;
 }
 
-/* Input field styling */
 .qr-input {
     padding: 10px 15px;
     font-size: 16px;
@@ -42,7 +37,6 @@
     border-color: #007bff;
 }
 
-/* Generate button styling */
 .generate-btn {
     padding: 10px 20px;
     background-color: #007bff;
@@ -58,7 +52,6 @@
     background-color: #0056b3;
 }
 
-/* QR Code container styling */
 .qr-code {
     margin-top: 20px;
     padding: 20px;
@@ -67,21 +60,19 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .download-btn {
-    margin-top: 10px; /* Add some space above the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; 
+    padding: 10px 20px; 
+    background-color: #4CAF50; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 
 .download-btn:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049; 
 }
 
-
-/* Responsive styling */
 @media (max-width: 600px) {
     .qr-input {
         width: 100%;

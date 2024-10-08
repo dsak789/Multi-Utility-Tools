@@ -13,7 +13,7 @@ const Home = () => {
             description: 'Generate QR codes instantly.'
         },
         {
-            name:'Customized Qr',
+            name:'Customized Qr Generator',
             img: 'https://files.oaiusercontent.com/file-Dbrwz71zUOgU5nFWHKg5iucn?se=2123-10-24T01:54:19Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Df518066e-aa7d-4fc1-9ef2-64f3a1d81112.png&sig=Vk64VEL66hfr16e%2BJCmfgL7enKOckDSdVGHEG5DZ5QU%3D',
             to: '/custom-qr-generator',
             description: 'Generate customized QR codes instantly.'
@@ -30,26 +30,41 @@ const Home = () => {
             to: '/unit-converter',
             description: 'Convert units efficiently.'
         },
-        // Add more routes as needed
+        {
+            name:'Weather App',
+            img: 'https://naturemood.vercel.app/image.png',
+            to: 'https://naturemood.vercel.app/',
+            description: 'Tells Your City weather Mood.'
+        },
+        {
+            name:'Task Tracker',
+            img: 'https://raw.githubusercontent.com/dsak789/Task-Tracker-App/refs/heads/dev7/assets/images/TaskTracker1024.png',
+            to: 'https://tasktracker.streamlit.app/',
+            description: 'An Advanced Todo List App.'
+        },
+        
     ];
 
     return (
-        <div className='homemain'>
-            {routes.map((route, index) => (
-                <Link to={route.to} key={index} className='router-link'>
-                    <div className='route-card' >
-                        <h2>
-                            {route.name}
-                        </h2>
-                        <div className='card-img'>
-                            <img src={route.img} alt="utility icon" />
+        <div>
+            <div className='banner'>Multi Utility Tools</div>
+            <div className='homemain'>
+                {routes.map((route, index) => (
+                    <Link to={route.to} key={index} className='router-link'>
+                        <div className='route-card' >
+                            <h3>
+                                {route.name}
+                            </h3>
+                            <div className='card-img'>
+                                <img src={route.img} alt={`${route.name} logo`} />
+                            </div>
+                            <div className='card-description'>
+                                <p>{route.description}</p>
+                            </div>
                         </div>
-                        <div className='card-description'>
-                            <p>{route.description}</p>
-                        </div>
-                    </div>
-                </Link>
-            ))}
+                    </Link>
+                ))}
+            </div>
         </div>
     );
 };
