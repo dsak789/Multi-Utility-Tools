@@ -1,0 +1,68 @@
+.homemain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.route-card {
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 320px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.route-card h2{
+    color: rgba(0, 76, 255, 0.508);
+}
+.route-card:hover {
+    transform: translateY(-10px);   
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.634);
+    cursor: pointer;
+}
+.card-img{
+    padding: 10px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(6, 6, 6, 0.836);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.route-card:hover .card-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .homemain {
+        grid-template-columns: 1fr;
+    }
+
+    .route-card {
+        width: 100%;
+    }
+}
