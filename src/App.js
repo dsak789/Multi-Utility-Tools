@@ -8,6 +8,7 @@ import QrGeneratort from './components/QrGenerator'
 import UnitConvertor from './components/UnitConvertor'
 import BMICalculator from './components/BMICalculator'
 import CustomQRGenerator from './components/CustomQrGenerator'
+import CurrencyConverter from './components/CurrencyConverter'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/qr-generator' element={<QrGeneratort/>} />
           <Route path='/custom-qr-generator' element={<CustomQRGenerator/>} />
           <Route path='/unit-converter' element={<UnitConvertor/>} />
+          <Route path='/currency-converter' element={<CurrencyConverter/>} />
           <Route path='/bmi-calculator' element={<BMICalculator/>} />
           <Route path='*' element={<Invalid404/>} />
         </Routes>

@@ -31,6 +31,12 @@ const Home = () => {
             description: 'Convert units efficiently.'
         },
         {
+            name:'Currency Converter',
+            img: 'https://th.bing.com/th/id/R.090c90f45807ecfe4e878c61e84ef9f7?rik=TzQtPRKzj%2b%2b3rw&riu=http%3a%2f%2fmoneybulldog.co.uk%2fwp-content%2fuploads%2f2016%2f01%2fCurrency-converters.png&ehk=NOKKHjGz%2fPI7NLAYwILSLj5P11dOaDdcdwAWwxPMHt0%3d&risl=&pid=ImgRaw&r=0',
+            to: '/currency-converter',
+            description: 'Convert currency efficiently.'
+        },
+        {
             name:'Weather App',
             img: 'https://naturemood.vercel.app/image.png',
             to: 'https://naturemood.vercel.app/',
